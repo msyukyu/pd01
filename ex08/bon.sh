@@ -1,1 +1,1 @@
-ldapsearch -LLLQ "(sn=*bon*)" sn | grep ^dn | wc -l | tr -d ' '
+ldapsearch -LLLQ "(sn=*bon*)" sn | grep "^dn" | wc -l | tr -d ' '
